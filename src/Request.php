@@ -24,7 +24,7 @@ class Request
         $this->curl = new CurlRequest();
     }
 
-    protected function request(string $url, string $method, array $postData, string $hash): mixed
+    protected function request(string $url, string $method, array $postData, string $hash)
     {
         $this->curl->setOption(CURLOPT_URL, $url);
         $this->curl->setOption(CURLOPT_CUSTOMREQUEST, $method);
